@@ -2,11 +2,8 @@
 
 <body>
 
-	<header>
-		<?php $this -> load -> view('segments/banner'); ?>
-		<?php $this -> load -> view('menus/main-menu'); ?>
-	</header>
-	<section class="content">
+	<section>
+		
 		<?php $this->load->view('elements/login-form'); ?>
 	</section>
 

@@ -5,6 +5,7 @@
 		<?php $this -> load -> view('menus/main-menu'); ?>
 	</header>
 	<section class="events">
+		<a href="<?php echo base_url();?>C_Events/register">New Event</a>
 		<section class="side-menu">
 <h3>Events</h3>
 	<ul class="alphaList">

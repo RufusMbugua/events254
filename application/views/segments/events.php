@@ -4,21 +4,21 @@
 ?>
 
 <section class="event anniversary">
-	one
+	<h3>Anniversary</h3>
 </section>
 
 <section class="event birthdays">
-	two
+	<h3>Birthdays</h3>
 </section>
 <section class="event corporate">
-	three
+	<h3>Corporate</h3>
 </section>
 <section class="event party">
-	four
+	<h3>Party</h3>
 </section>
 <section class="event teambuilding">
-	five
+	<h3>Team Building</h3>
 </section>
 <section class="event weddings">
-	six
+	<h3>Weddings</h3>
 </section>

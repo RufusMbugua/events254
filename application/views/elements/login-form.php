@@ -1,4 +1,5 @@
 <form class="login" accept-charset="utf-8" action="<?php echo base_url().'c_authorize/login'?>" method="post">
+	<?php $this->load->view('elements/message'); ?>
 	<h3>Sign In</h3>
 	<input type="text" class="email" placeholder="Email Address" name="email" required/>
 	<input type = "password" class="secret" placeholder="Password" name="password" required/>

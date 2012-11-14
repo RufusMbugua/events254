@@ -33,7 +33,10 @@ class C_Authorize extends CI_Controller {
 		} else {
 			#use an ajax request and not a whole refresh
 			
-			echo ('Error');
+			$data['message']="User Not Found";
+			$data['messageType']="error";
+			
+			$this->load->view('login',$data);
 		}
 	}
 

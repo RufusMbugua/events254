@@ -24,14 +24,16 @@ class C_Front extends CI_Controller {
 		$this -> load -> view('events', $data);
 	}//End of index file
 	
-		public function myprofile() {
+	public function myprofile() {
 		$data['title'] = 'MyProfile';
 		$data['content'] = "<p>Cakes Delights</p>";
 		$this -> load -> view('myprofile', $data);
 	}//End of index file
 	
-			public function login() {
+	public function login() {
 		$data['title'] = 'Login';
+		$data['message'] = 'Login';
+		$data['messageType'] = 'guide';
 		$data['content'] = "<p>Cakes Delights</p>";
 		$this -> load -> view('login', $data);
 	}//End of index file
