@@ -4,7 +4,7 @@ if (!defined('BASEPATH'))
 /**
  *model to SystemUser entity
  */
-use application\models\Entities\entities_254\E_Trainers;
+use application\models\Entities\entities_254\Events;
 
 class M_Events extends MY_Model {
 	var $isUser, $email, $userRights, $affiliation;
@@ -94,7 +94,7 @@ class M_Events extends MY_Model {
 				//$this -> theForm -> setDates($this->elements[$i]['visitDate']);;/*entry option*/
 				$this -> theForm -> setEvent_Name($this -> input -> post('eventName'));
 				$this -> theForm -> setEvent_Type($this -> input -> post('eventType'));
-				$this -> theForm -> setCreated_By(1);
+				$this -> theForm -> setCreated_By($this->session->userdata('id'));
 				//$this -> theForm -> setDateOfBirth($this -> input -> post('dateofBirth'));
 
 				$this -> em -> persist($this -> theForm);
@@ -140,15 +140,16 @@ class M_Events extends MY_Model {
 
 	function viewRecords() {
 		try {
-			$query = $this -> em -> createQuery('SELECT u FROM models\Entities\E_Trainers u');
-			$this -> trainers = $query -> getResult();
+			$query = $this -> em -> createQuery('SELECT u FROM models\Entities\entities_254\E_Events u');
+			$this -> events = $query -> getArrayResult();
+			
 			// array of User objects
 
 		} catch(exception $ex) {
 			//ignore
 			//$ex->getMessage();
 		}
-		return $this -> trainers;
+		return $this -> events;
 	}
 
 }//end of class M_SystemUser)

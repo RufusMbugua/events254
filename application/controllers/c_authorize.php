@@ -24,7 +24,7 @@ class C_Authorize extends CI_Controller {
 
 		
 			/*create session data*/
-			$newdata = array('email' => $this -> m_clients -> email, 'logged_in' => TRUE);
+			$newdata = array('email' => $this -> m_clients -> email, 'logged_in' => TRUE,'id' => $this ->m_clients->id);
 			$this -> session -> set_userdata($newdata);
 
 			redirect(base_url() . 'C_front/index', 'refresh');

@@ -7,6 +7,5 @@
 		<?php $this->load->view('elements/login-form'); ?>
 	</section>
 
-	<footer></footer>
 </body>
 </html>

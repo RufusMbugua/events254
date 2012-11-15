@@ -35,7 +35,7 @@ nav {
 	color-stop(0.84, rgb(144,36,171))
 	);
 }
-.side-menu, .result, .tile, .content{
+.side-menu, .result, .tile, .content, .login{
 	background-image: linear-gradient(bottom, rgb(220,150,245) 33%, rgb(233,163,250) 67%, rgb(234,156,255) 84%);
 	background-image: -o-linear-gradient(bottom, rgb(220,150,245) 33%, rgb(233,163,250) 67%, rgb(234,156,255) 84%);
 	background-image: -moz-linear-gradient(bottom, rgb(220,150,245) 33%, rgb(233,163,250) 67%, rgb(234,156,255) 84%);
@@ -56,7 +56,7 @@ nav, .side-menu, .result, .tile,.alphaList li:hover, .login {
 	-webkit-box-shadow: 0 1px 5px 0.5px #000;
 	-o-box-shadow: 0 0.5px 1px 0.6px #000;
 }
-.side-menu h3, .result h3, .tile h3{
+.side-menu h3, .result h3, .tile h3, .tr-title{
 	text-align:left;
 	border-bottom: 1px solid #663399;
 	background-image: linear-gradient(bottom, rgb(147,15,191) 33%, rgb(159,40,189) 67%, rgb(144,36,171) 84%);
@@ -111,10 +111,10 @@ footer {
 .content {
 	margin: auto;
 	margin-top: 40px;
-	height: 50%;
-	width: 70%;
+	width: 68%;
 	border-radius: 5px;
 	border: 1px solid #663399;
+	padding:1%;
 }
 nav a {
 	margin-top: 10px;
@@ -205,19 +205,6 @@ ul li.last {
  * Login Element
  */
 .login {
-	background-image: linear-gradient(bottom, rgb(147,15,191) 33%, rgb(159,40,189) 67%, rgb(144,36,171) 84%);
-	background-image: -o-linear-gradient(bottom, rgb(147,15,191) 33%, rgb(159,40,189) 67%, rgb(144,36,171) 84%);
-	background-image: -moz-linear-gradient(bottom, rgb(147,15,191) 33%, rgb(159,40,189) 67%, rgb(144,36,171) 84%);
-	background-image: -webkit-linear-gradient(bottom, rgb(147,15,191) 33%, rgb(159,40,189) 67%, rgb(144,36,171) 84%);
-	background-image: -ms-linear-gradient(bottom, rgb(147,15,191) 33%, rgb(159,40,189) 67%, rgb(144,36,171) 84%);
-	background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.33, rgb(147,15,191)),
-	color-stop(0.67, rgb(159,40,189)),
-	color-stop(0.84, rgb(144,36,171))
-	);
 	width: 30%;
 	height: auto;
 	padding: 2%;
@@ -552,4 +539,72 @@ Sample: <button class="large awesome blue" type="submit">Awesome Blue Button</bu
 	color-stop(0.67, rgb(102,98,98)),
 	color-stop(0.84, rgb(107,107,107))
 	);
+}
+
+/*
+ * Tables
+ */
+table{
+	margin:auto;
+	border:1px solid #666;
+	width:90%;
+	
+}
+
+.tr-title td{
+	padding:1%;
+}
+td{
+	padding:2px;
+}
+.tr-row{
+	border-bottom:1px solid #666;
+	background:white;
+}
+table a{
+	margin-right:10%;
+}
+
+/*
+ * Form Formatting
+ *
+ *
+ *
+ */
+form {
+	padding: 3%;
+	margin: auto;
+}
+form label {
+	padding: 1%;
+}
+form input {
+	margin: auto;
+	padding: 1%;
+	width: 100%;
+	border: 1px solid #333;
+	outline: none;
+	font-family: Quicksand;
+	font-size: 100%;
+	border: 1px solid #999;
+	outline: none;
+	margin-bottom: 2%;
+}
+form input[type=submit] {
+	margin: auto;
+	margin-left: 25%;
+	width: 50%;
+}
+form h3 {
+	margin: 0;
+	font-size: 1.3em;
+	border-bottom: 1px solid #333;
+	font-family: Timeless Bold;
+	width: 100%;
+	margin-bottom:3%;
+}
+form .fields {
+	margin: auto;
+	margin-top: 2%;
+	width: 90%;
 }
